@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 html::-webkit-scrollbar {
   display: none;
@@ -16,7 +16,7 @@ body {
   font-family: "Ubuntu", sans-serif;
 
   max-width: 100%;
-  background: rgba(0, 0, 0, 0.5) url(background.jpg);
+  background: rgba(0, 0, 0, 0.5) url(blackbackground.jpg);
   background-blend-mode: darken;
   background-size: cover;
   background-attachment: fixed;
