@@ -6,9 +6,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  /* scroll-behavior: smooth; */
-}
 html::-webkit-scrollbar {
   display: none;
 }
@@ -446,7 +443,7 @@ li a:hover {
   0% {
     opacity: 0;
     filter: blur(3px);
-    transform: translatey(-100%);
+    transform: translatey(100%);
   }
   100% {
     opacity: 1;
