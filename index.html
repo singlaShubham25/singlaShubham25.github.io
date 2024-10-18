@@ -4,72 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/skill.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Shubham Singla</title>
     <script defer src="scroll.js"></script>
   </head>
 
   <body>
-    <header id="navbar">
-      <img
-        src="Icon/icons8-circled-s-96.png"
-        alt="logo"
-        width="60"
-        height="60"
-      />
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-
     <div class="layout">
-      <aside class="aside1">
-        <img
-          src="Icon/icons8-linkedin-144.png"
-          alt="linkdin"
-          width="40px"
-          height="40px"
-        />
-        <img
-          src="Icon/icons8-instagram-144.png"
-          alt="instagram"
-          width="40px"
-          height="40px"
-        />
-        <img
-          src="Icon/icons8-telegram-app-144.png"
-          alt="telegram"
-          width="40px"
-          height="40px"
-        />
-        <img
-          src="Icon/icons8-mail-144 (1).png"
-          alt="mail"
-          width="40px"
-          height="40px"
-        />
-      </aside>
+      <div class="aside1">
+        <i class="fab fa-github" style="font-size: 30px"></i>
+        <i class="fab fa-instagram" style="font-size: 30px"></i>
+        <i class="fab fa-linkedin" style="font-size: 30px"></i>
+        <i class="fa fa-envelope" style="font-size: 30px"></i>
+      </div>
 
-      <main>
+      <div class="main">
         <section class="hero">
           <div class="intro hidden">
-            <h3 class="intro-text1">Hello</h3>
-            <h1 class="intro-text2">
-              I'm <span class="highlight">Shubham</span> Singla
-            </h1>
+            <h3 class="intro-text1 highlight">Hi! I'm</h3>
+            <h1 class="intro-text2">Shubham Singla</h1>
             <h2 class="intro-text3">
-              I <span class="highlight">Code</span> Stuff
+              <span class="highlight">And I </span>am a Frontend Developer
             </h2>
           </div>
         </section>
 
         <section class="about" id="about">
-          <h2 class="hidden1"><span class="highlight">About</span> Me</h2>
+          <h2 class="hidden1">About <span class="highlight">Me :-</span></h2>
           <div class="about-container">
+            <div class="mytext">
+              <!-- <h3>I'M A <span class="highlight">FRONTEND</span> DEVELOPER</h3> -->
+              <p>
+                Loem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                possimus deserunt eaque molestiae cupiditate, magni error rerum
+                repellendus facere eum blanditiis. Non et odio sapiente Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+                repellat.
+              </p>
+              <div class="title">
+                <p class="links active-link" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="content active-tab" id="experience">
+                <ul>
+                  <li><span>2045</span><br />BTech from uiet</li>
+                  <li><span>2045</span><br />BTech from uiet</li>
+                  <li><span>2045</span><br />BTech from uiet</li>
+                </ul>
+              </div>
+              <div class="content" id="education">
+                <ul>
+                  <li>
+                    <span>2021-2025</span><br />BTech from Panjab University
+                  </li>
+                  <li>
+                    <span>2019-2021</span><br />HSC from Nav Jyoti Public School
+                  </li>
+                  <li>
+                    <span>2019</span><br />SSC from V.R. Sr. Sec. Public School
+                  </li>
+                </ul>
+              </div>
+            </div>
             <img
               class="myimage hidden"
               src="shubham.jpeg"
@@ -77,127 +85,136 @@
               width="500"
               height="500"
             />
-            <div class="mytext hidden1">
-              <h3>I'M A <span class="highlight">FRONTEND</span> DEVELOPER</h3>
-              <p>
-                Loem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-                possimus deserunt eaque molestiae cupiditate, magni error rerum
-                repellendus facere eum blanditiis. Non et odio sapiente,
-                accusantium reiciendis saepe est neque Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quaerat architecto, corrupti
-                unde dolorum laudantium eveniet
-              </p>
-            </div>
           </div>
         </section>
 
         <section class="skills" id="skills">
           <h2 class="hidden1">
-            Here Are Some Of My <em class="highlight">Skills</em>
+            <span class="highlight">Here Are Some Of My</span>
+            Skills
           </h2>
           <div class="myskills">
-            <div class="skill-container hidden">
-              <img src="icon/c-.png" alt="cpp image" />
-              <p>C++</p>
-            </div>
-            <div class="skill-container hidden">
-              <img src="icon/html-5.png" alt="html image" />
-              <p>HTML</p>
-            </div>
-            <div class="skill-container hidden">
-              <img src="icon/css-3.png" alt="css image" />
-              <p>CSS</p>
-            </div>
-            <div class="skill-container hidden">
-              <img src="icon/photoshop.png" alt="ps image" />
-              <p>Photoshop</p>
-            </div>
-            <div class="skill-container hidden">
-              <img src="icon/js.png" alt="js image" />
-              <p>JavaScript</p>
-            </div>
+            <li>
+              <h3>HTML</h3>
+              <h3 class="percent highlight">75%</h3>
+              <span class="bar"><span class="html"></span></span>
+            </li>
+            <li>
+              <h3>CSS</h3>
+              <h3 class="percent highlight">75%</h3>
+              <span class="bar"><span class="css"></span></span>
+            </li>
+            <li>
+              <h3>JavaScript</h3>
+              <h3 class="percent highlight">60%</h3>
+              <span class="bar"><span class="js"></span></span>
+            </li>
+            <li>
+              <h3>C++</h3>
+              <h3 class="percent highlight">80%</h3>
+              <span class="bar"><span class="cpp"></span></span>
+            </li>
           </div>
         </section>
 
         <section class="projects" id="projects">
           <h2 class="hidden1">
-            Some <span class="highlight">Things</span> I've Built
+            <span class="highlight">Some</span>
+            Projects <span class="highlight">I've Built</span>
           </h2>
           <div class="myprojects">
             <div class="project-container">
-              <h3 class="hidden1">PROJECT-1</h3>
-              <p class="hidden1">
-                Project description Project description Project description
-                Project description Project description Project description
-                Project description Project description Project description
-              </p>
-              <p class="hidden1">lang lang lang</p>
+              <img src="projectImg.webp" alt="project1" />
+              <div class="text-area">
+                <h3 class="name">PROJECT-1</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  fugiat praesentium necessitatibus alias, adipisci aliquam
+                  soluta optio illum maiores officia deleniti repellendus nisi
+                  autem. Voluptates amet iure sequi soluta optio.
+                </p>
+                <p class="lang">
+                  <i class="fab fa-github"></i>
+                  <i class="fa fa-external-link"></i>lang lang lang
+                </p>
+              </div>
             </div>
             <div class="project-container">
-              <h3 class="hidden1">PROJECT-2</h3>
-              <p class="hidden1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, vitae reprehenderit, ea dolorem quos laborum quod
-                distinctio officia delectus et adipisci
-              </p>
-              <p class="hidden1">lang lang lang</p>
+              <div class="text-area">
+                <h3 class="name">PROJECT-1</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  fugiat praesentium necessitatibus alias, adipisci aliquam
+                  soluta optio illum maiores officia deleniti repellendus nisi
+                  autem. Voluptates amet iure sequi soluta optio.
+                </p>
+                <p class="lang">
+                  <i class="fab fa-github"></i>
+                  <i class="fa fa-external-link"></i>lang lang lang
+                </p>
+              </div>
+              <img src="projectImg.webp" alt="project1" />
             </div>
             <div class="project-container">
-              <h3 class="hidden1">PROJECT-3</h3>
-              <p class="hidden1">
-                Project description Project description Project description
-                Project description Project description Project description
-                Project description Project description Project description
-              </p>
-              <p class="hidden1">lang lang lang</p>
-            </div>
-            <div class="project-container">
-              <h3 class="hidden1">PROJECT-4</h3>
-              <p class="hidden1">
-                Project description Project description Project description
-                Project description Project description Project description
-                Project description Project description Project description
-              </p>
-              <p class="hidden1">lang lang lang</p>
+              <img src="projectImg.webp" alt="project1" />
+              <div class="text-area">
+                <h3 class="name">PROJECT-1</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  fugiat praesentium necessitatibus alias, adipisci aliquam
+                  soluta optio illum maiores officia deleniti repellendus nisi
+                  autem. Voluptates amet iure sequi soluta optio.
+                </p>
+                <p class="lang">
+                  <i class="fab fa-github"></i>
+                  <i class="fa fa-external-link"></i>lang lang lang
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="contact" id="contact">
           <h2 class="hidden1">
-            <span class="highlight">Contact Me </span>Here
+            Contact Me
+            <span class="highlight">Here</span>
           </h2>
-          <div class="mycontacts">
-            <div class="hidden">
-              <img src="Icon/icons8-linkedin-144.png" alt="linkdin" />
-            </div>
-            <div class="hidden">
-              <img src="Icon/icons8-instagram-144.png" alt="instagram" />
-            </div>
-            <div class="hidden">
-              <img src="Icon/icons8-telegram-app-144.png" alt="telegram" />
-            </div>
-            <div class="hidden">
-              <img src="Icon/icons8-mail-144 (1).png" alt="mail" />
-            </div>
-            <div class="hidden">
-              <img
-                class="invert"
-                src="Icon/icons8-github-144.png"
-                alt="github"
-              />
-            </div>
+          <div class="login-box">
+            <form>
+              <div class="user-box">
+                <input type="text" name="name" required />
+                <label>Your Name:</label>
+              </div>
+              <div class="user-box">
+                <input type="email" name="email" required />
+                <label>Your Email:</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="message" required />
+                <label>Message:</label>
+              </div>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Send
+              </a>
+            </form>
           </div>
         </section>
-      </main>
+      </div>
 
-      <aside class="aside2">
-        <a href="mailto:shubhamsingla2503@gmail.com"
-          ><p>shubhamsingla2503@gmail.com</p></a
-        >
-      </aside>
+      <div class="aside2">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">My Work</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <!-- <li><i class="fas fa-moon" style="font-size: 36px">dark</i></li> -->
+        </ul>
+      </div>
     </div>
-
-    <footer></footer>
   </body>
 </html>
